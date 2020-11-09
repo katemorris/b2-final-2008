@@ -1,0 +1,8 @@
+<h1>All Patients</h1>
+<section class="patients">
+  <ul>
+    <% @patients.age_sort('desc').each do |patient| %>
+    <li><%= patient.name %></li>
+    <% end %>
+  </ul>
+</section>
